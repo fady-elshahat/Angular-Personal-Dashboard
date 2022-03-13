@@ -1,16 +1,50 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { BookmarksComponent } from './bookmarks/bookmarks.component';
+import { TodosComponent } from './todos/todos.component';
+import { NotesComponent } from './notes/notes.component';
+import { BookmarkTileComponent } from './bookmark-tile/bookmark-tile.component';
+import { TodoItemComponent } from './todo-item/todo-item.component';
+import { NoteCardComponent } from './note-card/note-card.component';
+import { AddNoteComponent } from './add-note/add-note.component';
+import { FormsModule } from '@angular/forms';
+import { EditNoteComponent } from './edit-note/edit-note.component';
+import { AddTodoComponent } from './add-todo/add-todo.component';
+import { EditTodoComponent } from './edit-todo/edit-todo.component';
+import { AddBookmarkComponent } from './add-bookmark/add-bookmark.component';
+import { EditBookmarkComponent } from './edit-bookmark/edit-bookmark.component';
+import { ManageBookmarksComponent } from './manage-bookmarks/manage-bookmarks.component';
+import { NotificationComponent } from './notification/notification.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TabsComponent,
+    BookmarksComponent,
+    TodosComponent,
+    NotesComponent,
+    BookmarkTileComponent,
+    TodoItemComponent,
+    NoteCardComponent,
+    AddNoteComponent,
+    EditNoteComponent,
+    AddTodoComponent,
+    EditTodoComponent,
+    AddBookmarkComponent,
+    EditBookmarkComponent,
+    ManageBookmarksComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
