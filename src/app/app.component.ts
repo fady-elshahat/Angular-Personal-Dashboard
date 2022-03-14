@@ -10,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { map, Observable, timer } from 'rxjs';
 
+
 const baseStyles = style({
   position: 'absolute',
   top: 0,
@@ -224,6 +225,7 @@ const baseStyles = style({
   ],
 })
 export class AppComponent implements OnInit {
+  title = 'steembug';
   ngOnInit() {
     this.dateTime = timer(0, 1000).pipe(
       map(() => {
